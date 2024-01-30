@@ -1,0 +1,7 @@
+{
+  "name": "smsAutoread",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
