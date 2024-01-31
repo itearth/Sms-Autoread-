@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Mobile Number Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-content-center">
+  <div class="input-container">
+    <ion-item>
+      <ion-label position="floating">Enter Your Mobile Number</ion-label>
+      <ion-input type="tel" [(ngModel)]="mobileNumber" maxlength="10"></ion-input>
+    </ion-item>
+  </div>
+
+  <ion-button size="small" expand="block" class="login-button" (click)="login()">Login</ion-button>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<ion-input> is used to create an input field where users can enter their mobile number.
+  type="tel" specifies that the input type is a telephone number, which can trigger numeric keyboards on mobile devices.
+  maxlength="10" ensures that users can only input up to 10 digits.
+  [(ngModel)]="mobileNumber" binds the value entered by the user to the mobileNumber variable in your component TypeScript code. -->
