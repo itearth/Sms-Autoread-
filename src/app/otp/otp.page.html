@@ -1,4 +1,28 @@
-<ion-header [translucent]="true">
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      OTP Verification
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- <ion-item>
+    <ion-label position="floating">Enter Mobile Number</ion-label>
+    <ion-input type="tel" [(ngModel)]="mobileNumber"></ion-input>
+  </ion-item> -->
+
+  <ion-item>
+    <ion-label position="floating">Enter OTP</ion-label>
+    <ion-input type="text" [(ngModel)]="enteredOtp"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" color="primary" (click)="verifyOtp()">Verify OTP</ion-button>
+</ion-content>
+
+
+
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>Enter OTP</ion-title>
   </ion-toolbar>
@@ -10,4 +34,4 @@
     <ion-input type="text" [(ngModel)]="enteredOtp"></ion-input>
   </ion-item>
   <ion-button expand="block" (click)="verifyOtp()">Verify OTP</ion-button>
-</ion-content>
+</ion-content> -->
