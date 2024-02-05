@@ -13,13 +13,30 @@ export class OtpPage {
 
   async verifyOtp() {
     try {
-      // Assuming you have a method to retrieve the mobile number from storage or input
-      const mobileNumber = '9407481880'; 
+      // Retrieve the stored OTP from local storage
+      const storedOtp = localStorage.getItem('otp');
 
-      const response = await this.otpService.verifyOtp(mobileNumber, this.enteredOtp).toPromise();
-      console.log(response); 
+      // Assuming we have a method to retrieve the mobile number from storage or input
+      const mobileNumber = '9407481880';
+
+      console.log('Verifying OTP...');
+      // Verify the entered OTP with the stored OTP
+      if (this.enteredOtp === storedOtp) {
+        console.log('OTP verified successfully');
+        // Proceed with whatever action you need to take upon successful OTP verification
+      } else {
+        console.log('Incorrect OTP');
+        // Handle incorrect OTP scenario, maybe show an error message to the user
+      }
     } catch (error) {
-      console.error(error);
+      console.error('Error:', error);
     }
   }
 }
+
+
+
+
+
+
+

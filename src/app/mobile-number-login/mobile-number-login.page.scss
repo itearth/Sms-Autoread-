@@ -6,25 +6,23 @@ ion-content {
   padding: 0; /* Remove default padding to make sure content fills the entire height */
   border: 1px solid #ccc; /* Add border to the input container */
   border-radius: 8px;
-  
 
   .input-container {
     display: flex;
-  justify-content: center;
-  align-items: center;
-    // width: 80%;
-    // max-width: 300px; /* Optional: Set maximum width for input container */
+    justify-content: center;
+    align-items: center;
     padding-top: 10%;
-    // padding-left: 10%;
-   
-    
   }
 
   .login-button {
-   
     margin-top: 20px;
-    margin-left: 620px;
-    width: 10%; // Adjust the width as needed
+    width: 80%; // Adjust the width as needed
     font-size: 14px; // Adjust the font size as needed
+
+    // Center the button in mobile view using Ionic's responsive grid system
+    @media (max-width: 576px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
