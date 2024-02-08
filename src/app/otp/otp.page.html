@@ -7,11 +7,8 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <!-- <ion-item>
-    <ion-label position="floating">Enter Mobile Number</ion-label>
-    <ion-input type="tel" [(ngModel)]="mobileNumber"></ion-input>
-  </ion-item> -->
-
+  <!-- No need for mobile number input field since OTP will be auto-retrieved from SMS -->
+  
   <ion-item>
     <ion-label position="floating">Enter OTP</ion-label>
     <ion-input type="text" [(ngModel)]="enteredOtp"></ion-input>
@@ -22,16 +19,10 @@
 
 
 
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Enter OTP</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-item>
-    <ion-label position="floating">Enter OTP</ion-label>
-    <ion-input type="text" [(ngModel)]="enteredOtp"></ion-input>
-  </ion-item>
-  <ion-button expand="block" (click)="verifyOtp()">Verify OTP</ion-button>
-</ion-content> -->
+
+
+
+
+
+
